@@ -1,1 +1,164 @@
-<p>resultats works!</p>
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang="zxx"> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang="zxx"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Soccer BootStrap HTML5 CSS3 Theme</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Mobile Menu Star
+				Header End
+		*************************************-->
+		<!--************************************
+				Banner Start
+		*************************************-->
+		<div class="tg-banner tg-haslayout">
+			<div class="tg-imglayer">
+				<img src="images/bg-pattran.png" alt="image desctription">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="tg-banner-content tg-haslayout">
+						<div class="tg-pagetitle">
+							<h1>Live Results</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Banner End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="tg-main" class="tg-main tg-haslayout">
+			<!--************************************
+					Fixtures Start
+			*************************************-->
+			<section class="tg-main-section tg-haslayout">
+				<div class="container">
+					<div class="col-sm-11 col-xs-11 pull-right">
+						<div class="row">
+							<div class="tg-latestresult">
+								<div class="row justify-content-center">
+									<div class="col-md-7 col-sm-12 col-xs-12">
+										<div id="tg-upcomingmatch-slider" class="tg-upcomingmatch-slider tg-upcomingmatch">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide" *ngFor="let item of fixtures">
+													<div class="tg-match">
+														<div class="tg-matchdetail">
+															<div class="tg-box">
+																<strong class="tg-teamlogo">
+																	<img src="../../assets/logo-l-02.png" alt="image description">
+																</strong>
+																<h3>{{item.home}}</h3>
+															</div>
+																<div class="tg-box">
+                                  <h3>{{item.home_g}}-{{item.away_g}}</h3>
+                                </div>
+															<div class="tg-box">
+																<strong class="tg-teamlogo">
+																	<img src="../../assets/logo-l-02.png" alt="image description">
+																</strong>
+																<h3>{{item.away}}</h3>
+															</div>
+														</div>
+														<div class="tg-matchhover">
+															<address>{{item.date}} {{item.st_name}}</address>
+                              <address>Elapsed : {{item.elapsed}}</address>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Fixtures End
+			*************************************-->
+			<!--************************************
+					Upcoming Match Start
+			*************************************-->
+			<!--************************************
+					Upcoming Match End
+			*************************************-->
+			<!--************************************
+					Other Fixtures Start
+			*************************************-->
+			<!--************************************
+					Other Fixtures End
+			*************************************-->
+			<!--************************************
+					Video Start
+			*************************************-->
+			<!--************************************
+					Video End
+			*************************************-->
+			<!--************************************
+					Our Sponser Start
+			*************************************-->
+			<!--************************************
+					Our Sponser End
+			*************************************-->
+		</main>
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<!--************************************
+			Search Start
+	*************************************-->
+	<!--************************************
+			Search End
+	*************************************-->
+	<!--************************************
+		LightBoxes Start
+	*************************************-->
+	<!--************************************
+		LightBoxes End
+	*************************************-->
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/customScrollbar.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/prettyPhoto.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/countTo.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
