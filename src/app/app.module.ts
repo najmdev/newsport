@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ActualitesComponent } from './actualites/actualites.component';
 import { ResultatsComponent } from './resultats/resultats.component';
 import { LiguesComponent } from './ligues/ligues.component';
+import { FixturesComponent } from './fixtures/fixtures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActualitesComponent,
     ResultatsComponent,
-    LiguesComponent
+    LiguesComponent,
+    FixturesComponent
   ],
   imports: [
     BrowserModule,

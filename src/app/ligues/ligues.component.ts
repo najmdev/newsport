@@ -10,6 +10,7 @@ export class LiguesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

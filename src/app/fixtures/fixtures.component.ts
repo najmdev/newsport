@@ -2,46 +2,41 @@ import { Component, OnInit } from '@angular/core';
 import { ResultatsService } from '../services/resultats.service';
 
 @Component({
-  selector: 'app-resultats',
-  templateUrl: './resultats.component.html',
-  styleUrls: ['./resultats.component.css']
+  selector: 'app-fixtures',
+  templateUrl: './fixtures.component.html',
+  styleUrls: ['./fixtures.component.css']
 })
-export class ResultatsComponent implements OnInit {
+export class FixturesComponent implements OnInit {
 
   constructor(private service:ResultatsService) { }
-  public fixtures=[];
-  public fixture : any = {
+  public ufixtures=[];
+  public ufixture : any = {
     home : "",
     away : "",
-    home_g:0,
-    away_g:0,
     st_name:"",
     date:"",
-    elapsed:0
+    lg_name:""
   };
   ngOnInit(): void {
-    this.updateres();
-    //setInterval(() => this.updateres(), 30000);
+    this.getfixtures();
   }
-  updateres()
+  getfixtures()
   {
-    this.service.getresults().subscribe(
+    this.service.getupcomingfix().subscribe(
       (data) => {
         data=data.data;
         for(let i=0;i<data.length;i++)
         {
           /*if(data[i].countryName === 'Spain' || data[i].countryName === 'Italy' || data[i].countryName === 'France')
           {*/
-            this.fixture={
+            this.ufixture={
               home:data[i].homeName,
               away:data[i].awayName,
-              home_g:data[i].team_home_90min_goals,
-              away_g:data[i].team_away_90min_goals,
               st_name:data[i].venueName,
               date:data[i].date,
-              elapsed:data[i].elapsed
+              lg_name:data[i].leagueName
             }
-            this.fixtures.push(this.fixture);
+            this.ufixtures.push(this.ufixture);
           //}
         }             //Next callback
      },
