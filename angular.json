@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "newsport"
+    }
+  },
+  "defaultProject": "newsport",
+  "cli": {
+    "analytics": "51838a7a-edd6-4c7c-aa07-0ce99d09d75d"
+  }
 }
